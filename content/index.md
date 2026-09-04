@@ -13,4 +13,4 @@ Right now, I'm building the infrastructure and drafting my initial notes. The da
 - 💻 Tech & Development 
 - ⚙️ Digital Workflows
 
-*This site is built as a digital garden. Click around the graph or follow the links to see how the ideas connect.*
+*This site is built as a digital garden. Click around the graph or follow the links to see how the ideas connect.* 
