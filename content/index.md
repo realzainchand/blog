@@ -6,25 +6,27 @@
 
 Welcome to my cybersecurity notes and technical knowledge base.
 
-This site contains practical notes, concepts, tools, and hands-on learning from my journey in cybersecurity.
+This site contains practical notes, concepts, tools, and hands-on learning focused on cybersecurity.
 
-## What You'll Find
+## Topics
 
-* **Networking** — TCP/IP, OSI model, protocols, ports, and network security
-* **Linux & Windows** — Operating system fundamentals, administration, and security
-* **SOC & Blue Team** — SIEM, log analysis, detection, monitoring, and incident response
-* **Threat Detection** — Indicators of Compromise, attack techniques, and detection methods
-* **Security Tools** — QRadar, CrowdStrike, Wazuh, Wireshark, and other security tools
-* **Cybersecurity Fundamentals** — Core security concepts, attacks, vulnerabilities, and defenses
-* **Hands-on Labs** — Practical exercises, investigations, and lessons learned
-* **Certifications & Learning** — Notes from cybersecurity courses and certification preparation
+* Networking
+* Linux & Windows
+* SOC & Blue Team
+* SIEM & Log Analysis
+* Threat Detection
+* Incident Response
+* Cybersecurity Fundamentals
+* Security Tools
+* Hands-on Labs
+* Certification Notes
 
-## Purpose
+## About These Notes
 
-The goal is simple: **learn cybersecurity, document what I learn, and build knowledge that can be applied in real-world environments.**
+These notes document concepts, techniques, tools, and lessons learned while studying and practicing cybersecurity.
 
-These notes are written for practical learning and quick reference.
+The focus is on understanding how security technologies work, analyzing real-world attacks, and developing practical skills that can be applied in security operations.
 
----
+## Start Exploring
 
-**Explore the notes and start learning.**
+Browse the notes to explore cybersecurity concepts, technical walkthroughs, security tools, and practical investigations.
