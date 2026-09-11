@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Cybersecurity Notes
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -21,25 +21,25 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
-        dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#fff23688"
+        light: "#f7f8fb"
+        lightgray: "#e3e6ee"
+        gray: "#a3aab8"
+        darkgray: "#3b3f4c"
+        dark: "#1f2230"
+        secondary: "#2c5c8f"
+        tertiary: "#6a8caf"
+        highlight: rgba(44, 92, 143, 0.1)
+        textHighlight: "#c9e0ff88"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#0d0f1a"
+        lightgray: "#1a1c2c"
+        gray: "#4a4f6a"
+        darkgray: "#c0c6dc"
+        dark: "#eceffc"
+        secondary: "#7aa2f7"
+        tertiary: "#a5c8ff"
+        highlight: rgba(122, 162, 247, 0.15)
+        textHighlight: "#7aa2f788"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
@@ -181,7 +181,7 @@ plugins:
       position: beforeBody
       priority: 20
   - source: "@quartz-community/tag-list"
-    enabled: false
+    enabled: true
     layout:
       position: beforeBody
       priority: 30
@@ -226,7 +226,14 @@ plugins:
       position: footer
       priority: 50
   - source: "@quartz-community/recent-notes"
-    enabled: false
+    enabled: true
+    options:
+      title: "Recent Notes"
+      limit: 5
+      linkToMore: "/notes"
+    layout:
+      position: left
+      priority: 40
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}
