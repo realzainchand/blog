@@ -22,23 +22,7 @@ This is a collection of concepts, techniques, tools, and practical knowledge gat
 - Digital Forensics
 - Security Tools
 
-## Focus Areas
 
-### Systems
-
-Linux, Windows, networking, system administration, and infrastructure.
-
-### Security
-
-Vulnerability assessment, penetration testing, web security, and security research.
-
-### Security Operations
-
-SOC workflows, SIEM, threat detection, log analysis, and incident response.
-
-### Engineering
-
-Security tools, scripting, automation, and practical security concepts.
 
 ## About These Notes
 
