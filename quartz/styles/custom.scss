@@ -85,51 +85,6 @@ body.animation-ready.dark {
   z-index: -1;
 }
 
-#progressive-blur {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-#progressive-blur > div {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  inset: 0;
-  backdrop-filter: blur(var(--blur-amount));
-  mask-image: linear-gradient(
-    252deg,
-    transparent,
-    transparent var(--stop1),
-    black var(--stop2),
-    black
-  );
-}
-
-#progressive-blur > div:nth-child(1) {
-  --blur-amount: 6px;
-  --stop1: 0%;
-  --stop2: 0%;
-}
-
-#progressive-blur > div:nth-child(2) {
-  --blur-amount: 12px;
-  --stop1: 40%;
-  --stop2: 80%;
-}
-
-#progressive-blur > div:nth-child(3) {
-  --blur-amount: 48px;
-  --stop1: 40%;
-  --stop2: 70%;
-}
-
-#progressive-blur > div:nth-child(4) {
-  --blur-amount: 96px;
-  --stop1: 70%;
-  --stop2: 80%;
-}
-
 #glow {
   position: absolute;
   background: linear-gradient(309deg, var(--bounce-light), var(--bounce-light) 20%, transparent);
@@ -160,10 +115,11 @@ body.animation-ready.dark {
   width: 80vw;
   height: 130vh;
   opacity: 0.07;
-  background-blend-mode: darken;
+  mix-blend-mode: darken;
   transform-origin: top right;
   transform-style: preserve-3d;
   transform: matrix3d(0.75, -0.0625, 0, 0.0008, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  will-change: transform, opacity;
 }
 
 [saved-theme="dark"] .perspective {
@@ -180,8 +136,6 @@ body.animation-ready.dark {
   width: 1600px;
   height: 1400px;
   background-image: url("/static/leaves.png");
-  filter: url(#wind);
-  animation: billow 8s ease-in-out infinite;
 }
 
 #blinds {
@@ -228,26 +182,4 @@ body.animation-ready.dark {
 
 [saved-theme="dark"] .shutter {
   height: 80px;
-}
-
-@keyframes billow {
-  0% {
-    transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale(1);
-  }
-
-  25% {
-    transform: perspective(400px) rotateX(1deg) rotateY(2deg) scale(1.02);
-  }
-
-  50% {
-    transform: perspective(400px) rotateX(-4deg) rotateY(-2deg) scale(0.97);
-  }
-
-  75% {
-    transform: perspective(400px) rotateX(1deg) rotateY(-1deg) scale(1.04);
-  }
-
-  100% {
-    transform: perspective(400px) rotateX(0deg) rotateY(0deg) scale(1);
-  }
 }
