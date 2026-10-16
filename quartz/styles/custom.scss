@@ -13,11 +13,66 @@ body {
   --shadow: #1a1917;
   --bounce-light: #f5d7a6;
   --timing-fn: cubic-bezier(0.455, 0.19, 0, 0.985);
+
+  animation-duration: 0s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+body.animation-ready {
+  animation-play-state: running;
+  animation-duration: 1s;
+  animation-name: sunrise;
+}
+
+body.animation-ready.dark {
+  animation-duration: 1.7s;
+  animation-name: sunset;
 }
 
 [saved-theme="dark"] {
   --shadow: #030307;
   --bounce-light: #1b293f;
+}
+
+@keyframes sunrise {
+  0% {
+    background-color: var(--night);
+  }
+
+  10% {
+    background-color: var(--dawn);
+  }
+
+  35% {
+    background-color: var(--morning);
+  }
+
+  100% {
+    background-color: var(--day);
+  }
+}
+
+@keyframes sunset {
+  0% {
+    background-color: var(--day);
+  }
+
+  30% {
+    background-color: var(--evening);
+  }
+
+  60% {
+    background-color: var(--dusk);
+  }
+
+  90% {
+    background-color: var(--dawn);
+  }
+
+  100% {
+    background-color: var(--night);
+  }
 }
 
 #dappled-light {

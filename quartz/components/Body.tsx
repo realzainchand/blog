@@ -1,4 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+// @ts-ignore
+import script from "./scripts/sunlit.inline"
 
 const Body: QuartzComponent = ({ children }: QuartzComponentProps) => {
   return (
@@ -56,5 +58,7 @@ const Body: QuartzComponent = ({ children }: QuartzComponentProps) => {
     </>
   )
 }
+
+Body.afterDOMLoaded = script
 
 export default (() => Body) satisfies QuartzComponentConstructor
