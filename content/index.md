@@ -1,37 +1,30 @@
 ---
-title: Welcome
+title: Welcome to the Knowledge Base
 ---
 
-# Cybersecurity Notes
+# Cybersecurity & Networking Notes
 
+Welcome to my digital garden of cybersecurity and networking knowledge!
 
-Welcome to my cybersecurity notes.
+This is a structured collection of concepts, techniques, tools, and practical experiences gathered while learning and working in the field of cybersecurity and IT infrastructure.
 
-This is a collection of concepts, techniques, tools, and practical knowledge gathered while learning and working with cybersecurity.
+## Explore Topics
 
-## Topics
+Below are some of the main areas covered in these notes.
 
+- [[Networking Concepts]]
 - Cybersecurity Fundamentals
-- Networking
-- Linux
-- Windows
-- Web Security
-- Penetration Testing
+- Linux & Windows Environments
+- Web Security & Penetration Testing
 - Vulnerability Assessment
-- Security Operations
-- SIEM
-- Threat Detection
-- Incident Response
+- Security Operations (SIEM, Threat Detection, Incident Response)
 - Digital Forensics
 - Security Tools
 
-
-
 ## About These Notes
 
-These notes document my learning process and the things I find useful along the way.
+These notes serve as a live documentation of my learning process. The goal is to build a reliable, easily navigable, and continuously improving knowledge base.
 
-Some notes may be incomplete or revised as my understanding improves. The goal is to build a useful and continuously improving cybersecurity knowledge base.
+Some notes may be brief or works-in-progress, but they will be expanded as my understanding grows.
 
-
-> This knowledge base is continuously evolving. New topics, concepts, and practical notes will be added over time.
+> **Note:** This knowledge base is continuously evolving. Check back often for new insights and practical notes!
